@@ -28,17 +28,11 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
         ),
     );
 
-    public static $classMap = array (
-        'FirstNamespace\\First' => __DIR__ . '/../..' . '/src/First.php',
-        'SharedNamespace\\Shared' => __DIR__ . '/../..' . '/../../shared/Shared.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5::$classMap;
 
         }, null, ClassLoader::class);
     }

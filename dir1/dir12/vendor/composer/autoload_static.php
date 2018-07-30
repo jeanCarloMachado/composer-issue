@@ -35,6 +35,7 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
 
     public static $classMap = array (
         'FirstNamespace\\First' => __DIR__ . '/..' . '/dir11/dir11/src/First.php',
+        'SecondNamespace\\Second' => __DIR__ . '/../..' . '/src/Second.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

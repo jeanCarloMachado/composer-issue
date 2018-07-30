@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'FirstNamespace\\First' => $vendorDir . '/dir11/dir11/src/First.php',
+    'SecondNamespace\\Second' => $baseDir . '/src/Second.php',
 );
