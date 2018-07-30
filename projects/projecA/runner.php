@@ -2,6 +2,9 @@
 
 require __DIR__.'/vendor/autoload.php';
 
+#works fine
 new \FirstNamespace\First;
-new \SharedNamespace\Shared;
+#works fine
 new \SecondNamespace\Second;
+#THIS  do NOT work
+new \SharedNamespace\Shared;
