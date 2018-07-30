@@ -1,0 +1,11 @@
+{
+    "name": "dir11/dir11",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "FirstNamespace\\":  ["src"],
+            "SharedNamespace\\": ["../../shared"]
+        }
+    }
+}

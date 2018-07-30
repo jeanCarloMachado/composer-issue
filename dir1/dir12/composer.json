@@ -1,0 +1,14 @@
+{
+    "optimize-autoloader": true,
+    "require": {
+        "dir11/dir11": "*@dev"
+    },
+    "repositories": [
+		{"type": "path","url": "../dir11"}
+    ],
+    "autoload": {
+        "psr-4": {
+            "SecondNamespace\\":  ["src"]
+        }
+    }
+}
