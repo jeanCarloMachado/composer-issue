@@ -1,12 +1,12 @@
 [
     {
-        "name": "dir11/dir11",
+        "name": "core/core",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "dist": {
             "type": "path",
-            "url": "../dir11",
-            "reference": "055988899e08f22d7369d1fa004f16805cbaf437",
+            "url": "../core",
+            "reference": "9136be1a59284b0bb75cfb0fcdbd3209ac76c46c",
             "shasum": null
         },
         "type": "library",

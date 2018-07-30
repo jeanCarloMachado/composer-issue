@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46630e1c3c9bf990d348e61952b4f881",
+    "content-hash": "ec8aa6cb2d19e79faad1e06f24b2b1e7",
     "packages": [
         {
-            "name": "dir11/dir11",
+            "name": "core/core",
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../dir11",
-                "reference": "055988899e08f22d7369d1fa004f16805cbaf437",
+                "url": "../core",
+                "reference": "9136be1a59284b0bb75cfb0fcdbd3209ac76c46c",
                 "shasum": null
             },
             "type": "library",
@@ -32,7 +32,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dir11/dir11": 20
+        "core/core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

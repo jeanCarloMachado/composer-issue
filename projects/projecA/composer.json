@@ -1,10 +1,10 @@
 {
     "optimize-autoloader": true,
     "require": {
-        "dir11/dir11": "*@dev"
+        "core/core": "*@dev"
     },
     "repositories": [
-		{"type": "path","url": "../dir11"}
+		{"type": "path","url": "../core"}
     ],
     "autoload": {
         "psr-4": {

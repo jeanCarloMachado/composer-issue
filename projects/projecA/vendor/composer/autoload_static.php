@@ -10,6 +10,7 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
         'S' => 
         array (
             'SharedNamespace\\' => 16,
+            'SecondNamespace\\' => 16,
         ),
         'F' => 
         array (
@@ -20,12 +21,21 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
     public static $prefixDirsPsr4 = array (
         'SharedNamespace\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/../../shared',
+            0 => __DIR__ . '/..' . '/shared',
         ),
-        'FirstNamespace\\' => 
+        'SecondNamespace\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'FirstNamespace\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/core/core/src',
+        ),
+    );
+
+    public static $classMap = array (
+        'FirstNamespace\\First' => __DIR__ . '/..' . '/core/core/src/First.php',
+        'SecondNamespace\\Second' => __DIR__ . '/../..' . '/src/Second.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -33,6 +43,7 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5::$classMap;
 
         }, null, ClassLoader::class);
     }

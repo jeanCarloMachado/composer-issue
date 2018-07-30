@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'FirstNamespace\\First' => $vendorDir . '/core/core/src/First.php',
+    'SecondNamespace\\Second' => $baseDir . '/src/Second.php',
 );

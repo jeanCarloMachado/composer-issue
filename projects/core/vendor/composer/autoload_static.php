@@ -10,7 +10,6 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
         'S' => 
         array (
             'SharedNamespace\\' => 16,
-            'SecondNamespace\\' => 16,
         ),
         'F' => 
         array (
@@ -21,21 +20,17 @@ class ComposerStaticInitc07faba02ba3a37196f6283ebb3ef1f5
     public static $prefixDirsPsr4 = array (
         'SharedNamespace\\' => 
         array (
-            0 => __DIR__ . '/..' . '/shared',
-        ),
-        'SecondNamespace\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/../../shared',
         ),
         'FirstNamespace\\' => 
         array (
-            0 => __DIR__ . '/..' . '/dir11/dir11/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
-        'FirstNamespace\\First' => __DIR__ . '/..' . '/dir11/dir11/src/First.php',
-        'SecondNamespace\\Second' => __DIR__ . '/../..' . '/src/Second.php',
+        'FirstNamespace\\First' => __DIR__ . '/../..' . '/src/First.php',
+        'SharedNamespace\\Shared' => __DIR__ . '/../..' . '/../../shared/Shared.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

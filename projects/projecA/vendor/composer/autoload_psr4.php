@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'SharedNamespace\\' => array($vendorDir . '/shared'),
     'SecondNamespace\\' => array($baseDir . '/src'),
-    'FirstNamespace\\' => array($vendorDir . '/dir11/dir11/src'),
+    'FirstNamespace\\' => array($vendorDir . '/core/core/src'),
 );

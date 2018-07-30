@@ -1,7 +1,5 @@
 {
-    "name": "dir11/dir11",
-    "require": {
-    },
+    "name": "core/core",
     "autoload": {
         "psr-4": {
             "FirstNamespace\\":  ["src"],
